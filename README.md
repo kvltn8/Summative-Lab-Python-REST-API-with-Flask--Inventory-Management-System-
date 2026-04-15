@@ -15,6 +15,7 @@ python app.py
 # In another terminal, run CLI
 cd inventory_system
 python cli.py
+
 When you run python cli.py, you will see:
 text
 1. View all      # Shows all items in inventory
@@ -32,7 +33,24 @@ POST	/inventory	Add item
 PATCH	/inventory/1	Update item
 DELETE	/inventory/1	Delete item
 GET	/fetch/5449000000996	Search OpenFoodFacts
-Project Structure
+
+Example
+Add an item:
+
+text
+Choice: 2
+Name: Macbook Pro
+Price: 2390
+Stock: 1
+Added! ID: 1
+View all items:
+
+text
+Choice: 1
+1: Macbook Pro - $2390.0 - stock:1
+
+
+#Project Structure
 text
 inventory_system/
 ├── app.py
@@ -50,3 +68,6 @@ Pytest
 
 OpenFoodFacts API
 
+
+
+OpenFoodFacts API
